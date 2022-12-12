@@ -2,11 +2,12 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCompass, faUserGroup, faHeart, faComment } from '@fortawesome/free-solid-svg-icons'
+import { faCompass, faUserGroup, faHeart, faEarthAmericas } from '@fortawesome/free-solid-svg-icons'
 
 const heartIcon = <FontAwesomeIcon icon={faHeart} />
 const userGroupIcon = <FontAwesomeIcon icon={faUserGroup} />
 const compassIcon = <FontAwesomeIcon icon={faCompass} />
+const earthIcon = <FontAwesomeIcon icon={faEarthAmericas} />
 
 export default function Homepage() {
   return (
@@ -27,13 +28,13 @@ export default function Homepage() {
                   <center>
                   <h2>Cadastre-se</h2>
                   <span className="card-icon">
-                     { userGroupIcon }
+                     { earthIcon }
                   </span>
                   </center>
 
                   <div className="card-content">
                      <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     TwoDots é a maior comunidade de games e conta com o melhor acervo de jogos mundo afora. Junte-se agora e faça parte de mais de 3 usuários!
                      </p>
 
                      <Link to="/">
