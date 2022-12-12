@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Register() {
-  return (
+   const [values, setValues] = useState()
+   console.log(values);
+
+   const handleChangeValues = (value) => {
+      setValues(prevValue => ({
+         ...prevValue,
+         [value.target.name]: value.target.value,
+      }))
+   }
+
+   const handleSendButton = () => {
+      console.log(values)
+   }
+
+   return (
    <>
    <div className="register-container">
       <center>
@@ -12,6 +26,7 @@ export default function Register() {
             name="name"
             placeholder="Nome"
             className="register-input"
+            onChange={handleChangeValues}
          />
       </div>
       <div className="input-container">
@@ -20,6 +35,7 @@ export default function Register() {
             name="cost"
             placeholder="Preço"
             className="register-input"
+            onChange={handleChangeValues}
          />
       </div>
       <div className="input-container">
@@ -28,10 +44,11 @@ export default function Register() {
             name="category"
             placeholder="Categoria"
             className="register-input"
+            onChange={handleChangeValues}
          />
       </div>
 
-      <button className="send">Pronto</button>
+      <button className="send" onClick={ () => handleSendButton() }>Pronto</button>
       </center>
             
    </div>
