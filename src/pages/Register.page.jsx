@@ -1,7 +1,7 @@
 import React from 'react'
 import Register from '../components/Register.component'
 
-export default function SearchPage() {
+export default function RegisterPage() {
   return (
    <>
    <div className="searchpage">

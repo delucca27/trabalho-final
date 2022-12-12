@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Homepage() {
   return (
@@ -16,7 +16,7 @@ export default function Homepage() {
             <div className="cards-container">
                <div className="link-card">
                   <center>
-                  <h2>Faça seu cadastro</h2>
+                  <h2>Cadastre-se</h2>
                   </center>
                   <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -25,7 +25,7 @@ export default function Homepage() {
 
                <div className="link-card">
                   <center>
-                  <h2>Procure seus jogos</h2>
+                  <h2>Procure</h2>
                   </center>
                   <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -34,7 +34,7 @@ export default function Homepage() {
 
                <div className="link-card">
                   <center>
-                  <h2>Sobre nós</h2>
+                  <h2>Contribua</h2>
                   </center>
                   <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

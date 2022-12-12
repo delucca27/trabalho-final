@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import Navbar from './components/Navbar.component'
 
 import HomePage from './pages/Home.page'
-import SearchPage from './pages/Search.page'
+import RegisterPage from './pages/Register.page'
 import NotFoundPage from './pages/NotFound.page'
 
 // style
@@ -19,7 +19,7 @@ export default function App() {
           <Routes>
             <Route path="/" element = { <HomePage /> } />
             <Route path="*" element = { <NotFoundPage /> } />
-            <Route path="/search" element = { <SearchPage /> } />
+            <Route path="/search" element = { <RegisterPage /> } />
           </Routes>
       </div>
     </Router>
