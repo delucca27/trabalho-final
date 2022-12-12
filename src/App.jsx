@@ -8,17 +8,19 @@ import HomePage from './pages/Home.page'
 import SearchPage from './pages/Search.page'
 import NotFoundPage from './pages/NotFound.page'
 
+// style
+import "./style/app.css"
+
 export default function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="application">
         <Navbar />
-        <Routes>
-          <Route path="/" element = { <HomePage /> } />
-          <Route path="*" element = { <NotFoundPage /> } />
-          <Route path="/search" element = { <SearchPage /> } />
-        </Routes>
-
+          <Routes>
+            <Route path="/" element = { <HomePage /> } />
+            <Route path="*" element = { <NotFoundPage /> } />
+            <Route path="/search" element = { <SearchPage /> } />
+          </Routes>
       </div>
     </Router>
   )

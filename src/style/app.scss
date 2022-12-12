@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Inter:wght@400;500&family=Roboto:wght@400;500&family=Unbounded:wght@600;700;800;900&display=swap');
+
+@import "./base";
+@import "./components/navbar";
+@import "./components/cards";
+@import "./components/register";
+
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+input, button
+{
+   all: unset;
+   border: 0;
+}
+
+.content
+{
+   width: 60%;
+   
+}
+
+// typos
+// font-family: 'Arimo', sans-serif;
+// font-family: 'Inter', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Unbounded', cursive;
+
+h1
+{
+   font-family: 'Unbounded', 'Roboto', 'Inter', sans-serif;
+   font-size: 52px;
+   color: #ffffffa8;
+}
+
+p, span, input, button
+{
+   font-family: 'Inter', sans-serif;
+   font-size: 17px;
+   letter-spacing: -0.25px;
+   line-height: 28px;
+   font-weight: 400;
+   color: #ffffffd2;
+
+}
+
+h2
+{
+   font-family: 'Inter', sans-serif;
+   font-size: 36px;
+   letter-spacing: -1px;
+   color: #ffffffd2;
+
+   margin-bottom: 20px;
+}
+
+span.link
+{
+   color: rgb(102, 50, 206);
+   // text-decoration: underline;
+}
