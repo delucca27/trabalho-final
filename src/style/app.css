@@ -401,6 +401,8 @@ span.card-icon {
 
 .store-item h1 {
   font-size: 32px;
+  letter-spacing: -2px;
+  font-weight: 600;
   font-family: 'Sora', 'Unbounded', sans-serif;
 }
 
@@ -439,6 +441,7 @@ span.card-icon {
   position: absolute;
   text-align: center;
   top: 65%;
+  color: #6e6e6e;
 }
 
 .store-item span.not-found-icon {
@@ -448,6 +451,7 @@ span.card-icon {
   top: 45%;
   left: 50%;
   font-size: 110px;
+  color: #6e6e6e;
 }
 
 .small-bar {

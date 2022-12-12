@@ -16,7 +16,7 @@ export default function StoreItem() {
 
       <span className="item-category">Gênero</span>
       <h1 className="item-name">Nome do jogo</h1>
-      <span className="item-price">100,00</span>
+      <span className="item-price">R$100,00</span>
    </div>
    </>
    )
