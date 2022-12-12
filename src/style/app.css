@@ -129,12 +129,29 @@ html {
   padding: 5px;
   background-color: #22212404;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .navbar .search-container input, .navbar .login-btn input {
   width: 100%;
   height: 100%;
   display: none;
+}
+
+.navbar span.icon {
+  font-size: 20px;
 }
 
 .navbar .search-container {
@@ -154,6 +171,10 @@ html {
           animation-delay: 0.25s;
 }
 
+.navbar .login-btn span.icon {
+  color: #05010ded;
+}
+
 .navbar .login-btn:hover {
   background: -webkit-gradient(linear, left top, right top, from(#00ff7b), to(#5dd899));
   background: linear-gradient(to right, #00ff7b 0%, #5dd899 100%);
@@ -168,6 +189,7 @@ html {
           animation: ease-in-out;
   padding-left: 30px;
   padding-right: 30px;
+  padding-right: 20px;
   background-color: rgba(35, 34, 37, 0.1);
 }
 
@@ -176,6 +198,7 @@ html {
   display: block;
   cursor: text;
   text-align: center;
+  font-weight: 500;
 }
 
 .cards-container {
@@ -230,6 +253,7 @@ html {
 
 span.card-icon {
   font-size: 146px;
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .card-anim-1 {

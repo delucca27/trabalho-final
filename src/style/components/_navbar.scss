@@ -46,6 +46,11 @@
       background-color: #22212404;
       cursor: pointer;
 
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+
       input
       {
          width: 100%;
@@ -53,6 +58,12 @@
          display: none;
       }
    }
+
+   span.icon
+   {
+      font-size: 20px;
+   }
+   
 
    .search-container
    {
@@ -67,6 +78,11 @@
 
       background-color: #deebf5;
       animation-delay: 0.25s;
+
+      span.icon
+      {
+         color: #05010ded;
+      }
    }
 
    .login-btn:hover
@@ -82,6 +98,7 @@
       animation: ease-in-out;
       padding-left: 30px;
       padding-right: 30px;
+      padding-right: 20px;
 
       background-color: rgba(35, 34, 37, 0.1);
 
@@ -91,6 +108,7 @@
          display: block;
          cursor: text;
          text-align: center;
+         font-weight: 500;
       }
    }
 }
