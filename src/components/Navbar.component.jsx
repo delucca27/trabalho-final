@@ -1,22 +1,25 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import Menu from './Menu.component'
+
 export default function Navbar() {
   return (
    <>
    <div className="navbar">
       <nav>
-
-         <div className="logo">
-            <div className="title-wrapper">
-               <span className="logo-title">
-               TwoDots
+         <Link to="/">
+            <div className="logo">
                <div className="title-wrapper">
-                  <span>GamingStore</span>
+                  <span className="logo-title">
+                  TwoDots
+                  <div className="title-wrapper">
+                     <span>GamingStore</span>
+                  </div>
+                  </span>
                </div>
-               </span>
             </div>
-         </div>
+         </Link>
 
          <div className="user-nav-options">
             <div className="search-container">
@@ -27,6 +30,8 @@ export default function Navbar() {
 
       </nav>
    </div>
+
+   <Menu />
    </>
   )
 }

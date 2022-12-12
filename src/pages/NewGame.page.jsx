@@ -5,7 +5,7 @@ export default function NewGamePage() {
   return (
    <>
    <div className="searchpage">
-      <div className={ "lighting-effect color1" }></div>
+      <div className={ "lighting-effect color2" }></div>
 
       <div className="glass-wrapper">
         <div className="content">

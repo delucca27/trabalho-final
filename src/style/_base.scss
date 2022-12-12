@@ -39,20 +39,22 @@ html
 {
    top: 25%;
    left: 50%;
-   background-color: #21da5ca1;
+   background-color: rgba(32, 217, 91, 0.4);
+   animation-name: glass-effect-anim;
+   animation-duration: 7s;
+}
+
+.color2
+{
+   top: 25%;
+   left: 50%;
+   background-color: rgba(102, 50, 206, 0.3);
    animation-name: glass-effect-anim;
    animation-duration: 7s;
 }
 
 @keyframes glass-effect-anim
 {
-   0% { opacity: 25%; top: 0%; background-color: #21da5c2b; }
-   100% { opacity: 100%; top: 25%; background-color: #21da5ca1 }
+   0% { opacity: 25%; top: 0%; }
+   100% { opacity: 100%; top: 25%; }
 }
-
-// .color2
-// {
-//    top: 85%;
-//    left: 85%;
-//    background-color: #21da7a;
-// }

@@ -32,7 +32,17 @@ html {
 .color1 {
   top: 25%;
   left: 50%;
-  background-color: #21da5ca1;
+  background-color: rgba(32, 217, 91, 0.4);
+  -webkit-animation-name: glass-effect-anim;
+          animation-name: glass-effect-anim;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+
+.color2 {
+  top: 25%;
+  left: 50%;
+  background-color: rgba(102, 50, 206, 0.3);
   -webkit-animation-name: glass-effect-anim;
           animation-name: glass-effect-anim;
   -webkit-animation-duration: 7s;
@@ -43,12 +53,10 @@ html {
   0% {
     opacity: 25%;
     top: 0%;
-    background-color: #21da5c2b;
   }
   100% {
     opacity: 100%;
     top: 25%;
-    background-color: #21da5ca1;
   }
 }
 
@@ -56,12 +64,10 @@ html {
   0% {
     opacity: 25%;
     top: 0%;
-    background-color: #21da5c2b;
   }
   100% {
     opacity: 100%;
     top: 25%;
-    background-color: #21da5ca1;
   }
 }
 
@@ -131,8 +137,29 @@ html {
   display: none;
 }
 
+.navbar .search-container {
+  opacity: 0;
+  margin-top: 0;
+  -webkit-animation-name: controls-anim-search;
+          animation-name: controls-anim-search;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .navbar .login-btn {
+  opacity: 0;
+  margin-top: 0;
+  -webkit-animation-name: controls-anim-button;
+          animation-name: controls-anim-button;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   background-color: #deebf5;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
 }
 
 .navbar .login-btn:hover {
@@ -157,6 +184,50 @@ html {
   display: block;
   cursor: text;
   text-align: center;
+}
+
+@-webkit-keyframes controls-anim-search {
+  0% {
+    opacity: 0%;
+    margin-top: 15px;
+  }
+  100% {
+    opacity: 100%;
+    margin-top: 0px;
+  }
+}
+
+@keyframes controls-anim-search {
+  0% {
+    opacity: 0%;
+    margin-top: 15px;
+  }
+  100% {
+    opacity: 100%;
+    margin-top: 0px;
+  }
+}
+
+@-webkit-keyframes controls-anim-button {
+  0% {
+    opacity: 0%;
+    margin-top: 15px;
+  }
+  100% {
+    opacity: 100%;
+    margin-top: 0px;
+  }
+}
+
+@keyframes controls-anim-button {
+  0% {
+    opacity: 0%;
+    margin-top: 15px;
+  }
+  100% {
+    opacity: 100%;
+    margin-top: 0px;
+  }
 }
 
 .cards-container {
@@ -288,6 +359,77 @@ html {
   padding-right: 20px;
 }
 
+.small-bar {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+button.menu {
+  position: fixed;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  top: 90px;
+  left: 21.65%;
+  z-index: 1000;
+  border: 0.5px solid rgba(255, 255, 255, 0.15);
+  width: 62px;
+  height: 62px;
+  border-radius: 20px;
+  background-color: #22212421;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  cursor: pointer;
+}
+
+.menu-content {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+}
+
+.menu-content .options-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+button.menu:hover {
+  width: 270px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+button.menu:hover .menu-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+span.menu-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+span.menu-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -295,9 +437,13 @@ html {
           box-sizing: border-box;
 }
 
-input, button {
+input, button, a {
   all: unset;
   border: 0;
+}
+
+a {
+  cursor: pointer;
 }
 
 .content {
@@ -333,7 +479,7 @@ center, .title-wrapper {
   }
 }
 
-h1, span.logo-title, span.logo-title span {
+h1, h4, span.logo-title, span.logo-title span {
   font-family: 'Unbounded', 'Roboto', 'Inter', sans-serif;
   font-size: 52px;
   color: #deebf5;
@@ -345,6 +491,10 @@ h1, span.logo-title, span.logo-title span {
           animation-duration: 0.75s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+h4 {
+  font-size: 22px;
 }
 
 span.logo-title, span.logo-title span {
@@ -365,7 +515,7 @@ p, span, input, button {
   letter-spacing: -0.25px;
   line-height: 28px;
   font-weight: 400;
-  color: #ffffffd2;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 h2 {

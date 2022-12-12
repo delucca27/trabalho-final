@@ -4,6 +4,7 @@
 @import "./components/navbar";
 @import "./components/cards";
 @import "./components/register";
+@import "./components/menu";
 
 *
 {
@@ -12,10 +13,15 @@
    box-sizing: border-box;
 }
 
-input, button
+input, button, a
 {
    all: unset;
    border: 0;
+}
+
+a
+{
+   cursor: pointer;
 }
 
 .content
@@ -42,7 +48,7 @@ center, .title-wrapper
    100% {padding-top: 0px; opacity: 100;}
 }
 
-h1, span.logo-title, span.logo-title span
+h1, h4, span.logo-title, span.logo-title span
 {
    font-family: 'Unbounded', 'Roboto', 'Inter', sans-serif;
    font-size: 52px;
@@ -54,11 +60,10 @@ h1, span.logo-title, span.logo-title span
    animation-fill-mode: forwards;
 }
 
-// .logo-title
-// {
-//    display: flex;
-//    flex-direction: row;
-// }
+h4
+{
+   font-size: 22px;
+}
 
 span.logo-title, span.logo-title span
 {
@@ -80,7 +85,7 @@ p, span, input, button
    letter-spacing: -0.25px;
    line-height: 28px;
    font-weight: 400;
-   color: #ffffffd2;
+   color: rgba(255, 255, 255, 0.7);
 
 }
 
