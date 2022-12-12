@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 export default function NewGame() {
+   const [backendData, setBackendData] = useState([{}])
+
    const [values, setValues] = useState()
    console.log(values);
 
@@ -14,6 +16,16 @@ export default function NewGame() {
    const handleSendButton = () => {
       console.log(values)
    }
+
+   useEffect(() => {
+      fetch("/api").then(
+         response => response.json
+      ).then(
+         data => {
+            setBackendData(data)
+         }
+      )
+   }, [])
 
    return (
    <>

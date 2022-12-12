@@ -45,7 +45,7 @@ export default function Homepage() {
 
                <div className="link-card card-anim-2">
                   <center>
-                  <h2>Procure</h2>
+                  <h2>Descubra</h2>
                   <span className="card-icon">
                      { compassIcon }
                   </span>
