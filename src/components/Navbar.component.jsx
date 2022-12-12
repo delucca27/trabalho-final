@@ -8,9 +8,14 @@ export default function Navbar() {
       <nav>
 
          <div className="logo">
-            <span className="logo-title">
-            TwoDots <span>GamingStore</span>
-            </span>
+            <div className="title-wrapper">
+               <span className="logo-title">
+               TwoDots
+               <div className="title-wrapper">
+                  <span>GamingStore</span>
+               </div>
+               </span>
+            </div>
          </div>
 
          <div className="user-nav-options">
@@ -19,7 +24,7 @@ export default function Navbar() {
             </div>
             <div className="login-btn"></div>
          </div>
-         
+
       </nav>
    </div>
    </>

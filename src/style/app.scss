@@ -42,7 +42,7 @@ center, .title-wrapper
    100% {padding-top: 0px; opacity: 100;}
 }
 
-h1, span.logo-title, span.logo-title > span
+h1, span.logo-title, span.logo-title span
 {
    font-family: 'Unbounded', 'Roboto', 'Inter', sans-serif;
    font-size: 52px;
@@ -54,7 +54,13 @@ h1, span.logo-title, span.logo-title > span
    animation-fill-mode: forwards;
 }
 
-span.logo-title, span.logo-title > span
+// .logo-title
+// {
+//    display: flex;
+//    flex-direction: row;
+// }
+
+span.logo-title, span.logo-title span
 {
    color: rgb(240, 248, 255);
    font-size: 26px;
