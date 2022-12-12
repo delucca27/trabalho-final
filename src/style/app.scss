@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Inter:wght@400;500&family=Roboto:wght@400;500&family=Unbounded:wght@600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;600;800&family=Unbounded:wght@400;500;600;700;800;900&display=swap');
 
 @import "./base";
+@import "./store";
 @import "./components/navbar";
 @import "./components/cards";
 @import "./components/register";
+@import "./components/storeitem";
 @import "./components/menu";
 
 *
@@ -50,8 +52,9 @@ center, .title-wrapper
 
 h1, h4, span.logo-title, span.logo-title span
 {
-   font-family: 'Unbounded', 'Roboto', 'Inter', sans-serif;
+   font-family: 'Unbounded', 'Sora', 'Inter', sans-serif;
    font-size: 52px;
+   font-weight: 500;
    color: #deebf5;
    
    animation-name: h1-anim;

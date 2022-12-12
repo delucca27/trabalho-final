@@ -34,7 +34,7 @@ export default function Homepage() {
 
                   <div className="card-content">
                      <p>
-                     TwoDots é a maior comunidade de games e conta com o melhor acervo de jogos mundo afora. Junte-se agora e faça parte de mais de 3 usuários!
+                     TwoDots™ é a maior comunidade de games e conta com o melhor acervo de jogos mundo afora. Junte-se agora e faça parte de mais de 3 usuários!
                      </p>
 
                      <Link to="/">

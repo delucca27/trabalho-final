@@ -18,7 +18,7 @@ export default function Menu() {
             <div className="small-bar"></div>
 
             <div className="options-column">
-               <Link to="/">
+               <Link to="/store">
                   <span className="menu-link">Ver loja</span>
                </Link>
                <Link to="/new">

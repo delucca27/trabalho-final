@@ -7,6 +7,7 @@ import Navbar from './components/Navbar.component'
 import HomePage from './pages/Home.page'
 import NewGamePage from './pages/NewGame.page'
 import NotFoundPage from './pages/NotFound.page'
+import StorePage from './pages/Store.page'
 
 // style
 import "./style/app.css"
@@ -20,6 +21,7 @@ export default function App() {
             <Route path="/" element = { <HomePage /> } />
             <Route path="*" element = { <NotFoundPage /> } />
             <Route path="/new" element = { <NewGamePage /> } />
+            <Route path="/store" element = { <StorePage /> } />
           </Routes>
       </div>
     </Router>

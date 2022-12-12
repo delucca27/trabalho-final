@@ -19,7 +19,7 @@ export default function Navbar() {
             <div className="logo">
                <div className="title-wrapper">
                   <span className="logo-title">
-                  TwoDots
+                  TwoDots™
                   <div className="title-wrapper">
                      <span>GamingStore</span>
                   </div>

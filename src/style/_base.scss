@@ -53,8 +53,17 @@ html
    animation-duration: 7s;
 }
 
+.color3
+{
+   top: -20%;
+   left: 50%;
+   background-color: rgba(255, 221, 0, 0.3);
+   animation-name: glass-effect-anim;
+   animation-duration: 7s;
+}
+
 @keyframes glass-effect-anim
 {
    0% { opacity: 25%; top: 0%; }
-   100% { opacity: 100%; top: 25%; }
+   100% { opacity: 100%; }
 }
