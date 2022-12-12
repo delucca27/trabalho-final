@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import Navbar from './components/Navbar.component'
 
 import HomePage from './pages/Home.page'
-import RegisterPage from './pages/Register.page'
+import NewGamePage from './pages/NewGame.page'
 import NotFoundPage from './pages/NotFound.page'
 
 // style
@@ -19,7 +19,7 @@ export default function App() {
           <Routes>
             <Route path="/" element = { <HomePage /> } />
             <Route path="*" element = { <NotFoundPage /> } />
-            <Route path="/search" element = { <RegisterPage /> } />
+            <Route path="/new" element = { <NewGamePage /> } />
           </Routes>
       </div>
     </Router>

@@ -30,11 +30,41 @@ input, button
 // font-family: 'Roboto', sans-serif;
 // font-family: 'Unbounded', cursive;
 
-h1
+center, .title-wrapper
+{
+   animation-name: center-move-in;
+   animation-duration: 0.75s;
+}
+
+@keyframes center-move-in
+{
+   0% {padding-top: 20px; opacity: 0;}
+   100% {padding-top: 0px; opacity: 100;}
+}
+
+h1, span.logo-title, span.logo-title > span
 {
    font-family: 'Unbounded', 'Roboto', 'Inter', sans-serif;
    font-size: 52px;
-   color: #ffffffa8;
+   color: #deebf5;
+   
+   animation-name: h1-anim;
+   animation-name: card-anim-1;
+   animation-duration: 0.75s;
+   animation-fill-mode: forwards;
+}
+
+span.logo-title, span.logo-title > span
+{
+   color: rgb(240, 248, 255);
+   font-size: 26px;
+   span
+   {
+      
+      background: linear-gradient(to right, rgb(0, 255, 123) 0%, rgb(93, 216, 153) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+   }
 }
 
 p, span, input, button
@@ -53,7 +83,7 @@ h2
    font-family: 'Inter', sans-serif;
    font-size: 36px;
    letter-spacing: -1px;
-   color: #ffffffd2;
+   color: #deebf5;
 
    margin-bottom: 20px;
 }

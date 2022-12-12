@@ -22,29 +22,37 @@ html
    width: 100%;
    height: 100%;
    position: absolute;
-   background-color: #020106cb;
-   backdrop-filter: blur(820px);
+   background-color: rgba(27, 24, 37, 0.25);
+   backdrop-filter: blur(1980px);
 }
 
 .lighting-effect
 {
-   width: 70vw;
-   height: 1020px;
+   width: 38vw;
+   height: 38vw;
    position: fixed;
    transform: translate(-50%, -50%);
    border-radius: 100%;
 }
 
-.blue
+.color1
 {
-   top: 30%;
-   left: 30%;
-   background-color: #217ada;
+   top: 25%;
+   left: 50%;
+   background-color: #21da5ca1;
+   animation-name: glass-effect-anim;
+   animation-duration: 7s;
 }
 
-.pink
+@keyframes glass-effect-anim
 {
-   top: 70%;
-   left: 70%;
-   background-color: #da21d4;
+   0% { opacity: 25%; top: 0%; background-color: #21da5c2b; }
+   100% { opacity: 100%; top: 25%; background-color: #21da5ca1 }
 }
+
+// .color2
+// {
+//    top: 85%;
+//    left: 85%;
+//    background-color: #21da7a;
+// }

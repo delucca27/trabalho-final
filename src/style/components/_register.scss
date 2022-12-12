@@ -1,11 +1,11 @@
 .register-container
 {
-   width: 690px;
-   height: 500px;
+   width: fit-content;
    padding: 28px;
    margin: auto;
    margin-top: 52px;
 
+   background-color: rgba(0, 1, 8, 0.35);
    border: 0.5px solid rgba(255, 255, 255, 0.15);
    border-radius: 28px;
 
@@ -17,9 +17,6 @@
 
       border-radius: 20px;
       margin-bottom: 6px;
-      padding: 10px;
-      padding-left: 20px;
-      padding-right: 20px;
 
       background-color: #22212404;
       cursor: text;
@@ -43,6 +40,13 @@
       font-weight: 600;
 
       cursor: pointer;
+   }
+
+   .register-content
+   {
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
    }
    
 }

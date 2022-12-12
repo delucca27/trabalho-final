@@ -1,12 +1,11 @@
 import React from 'react'
-import Register from '../components/Register.component'
+import Register from '../components/NewGame.component'
 
-export default function RegisterPage() {
+export default function NewGamePage() {
   return (
    <>
    <div className="searchpage">
-      <div className={ "lighting-effect pink" }></div>
-      <div className={ "lighting-effect blue" }></div>
+      <div className={ "lighting-effect color1" }></div>
 
       <div className="glass-wrapper">
         <div className="content">

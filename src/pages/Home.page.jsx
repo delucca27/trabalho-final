@@ -4,40 +4,42 @@ export default function Homepage() {
   return (
    <>
    <div className="homepage">
-      <div className={ "lighting-effect pink" }></div>
-      <div className={ "lighting-effect blue" }></div>
+      <div className={ "lighting-effect color1" }></div>
+      <div className={ "lighting-effect color2" }></div>
       <div className="glass-wrapper">
          <div className="content">
 
             <center>
-               <h1>O melhor em um só lugar</h1>
+               <div className="title-wrapper">
+                  <h1>Seus favoritos em um só lugar</h1>
+               </div>
             </center>
 
             <div className="cards-container">
-               <div className="link-card">
+               <div className="link-card card-anim-1">
                   <center>
                   <h2>Cadastre-se</h2>
                   </center>
                   <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </p>
                </div>
 
-               <div className="link-card">
+               <div className="link-card card-anim-2">
                   <center>
                   <h2>Procure</h2>
                   </center>
                   <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </p>
                </div>
 
-               <div className="link-card">
+               <div className="link-card card-anim-3">
                   <center>
                   <h2>Contribua</h2>
                   </center>
                   <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </p>
                </div>
             </div>

@@ -13,32 +13,56 @@ html {
 
 .glass-wrapper {
   width: 100%;
-  height: 150%;
+  height: 100%;
   position: absolute;
-  background-color: #020106cb;
-  -webkit-backdrop-filter: blur(820px);
-          backdrop-filter: blur(820px);
+  background-color: rgba(27, 24, 37, 0.25);
+  -webkit-backdrop-filter: blur(1980px);
+          backdrop-filter: blur(1980px);
 }
 
 .lighting-effect {
-  width: 70vw;
-  height: 1020px;
+  width: 38vw;
+  height: 38vw;
   position: fixed;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 100%;
 }
 
-.blue {
-  top: 30%;
-  left: 30%;
-  background-color: #217ada;
+.color1 {
+  top: 25%;
+  left: 50%;
+  background-color: #21da5ca1;
+  -webkit-animation-name: glass-effect-anim;
+          animation-name: glass-effect-anim;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
 }
 
-.pink {
-  top: 70%;
-  left: 70%;
-  background-color: #da21d4;
+@-webkit-keyframes glass-effect-anim {
+  0% {
+    opacity: 25%;
+    top: 0%;
+    background-color: #21da5c2b;
+  }
+  100% {
+    opacity: 100%;
+    top: 25%;
+    background-color: #21da5ca1;
+  }
+}
+
+@keyframes glass-effect-anim {
+  0% {
+    opacity: 25%;
+    top: 0%;
+    background-color: #21da5c2b;
+  }
+  100% {
+    opacity: 100%;
+    top: 25%;
+    background-color: #21da5ca1;
+  }
 }
 
 .navbar {
@@ -53,8 +77,9 @@ html {
 }
 
 .navbar nav {
-  width: 100%;
+  width: 60%;
   height: 100%;
+  margin: auto;
   -webkit-backdrop-filter: blur(32px);
           backdrop-filter: blur(32px);
   display: -webkit-box;
@@ -67,12 +92,15 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navbar .user-nav-options {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,12 +108,10 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  float: right;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .navbar .search-container, .navbar .login-btn {
@@ -106,15 +132,16 @@ html {
 }
 
 .navbar .login-btn {
-  background-color: #c5c5c5;
+  background-color: #deebf5;
 }
 
 .navbar .login-btn:hover {
-  background-color: #646464;
+  background: -webkit-gradient(linear, left top, right top, from(#00ff7b), to(#5dd899));
+  background: linear-gradient(to right, #00ff7b 0%, #5dd899 100%);
 }
 
 .navbar .search-container:hover {
-  width: 310px;
+  width: 510px;
   height: 52px;
   -webkit-transition: 0.35s;
   transition: 0.35s;
@@ -126,6 +153,7 @@ html {
 }
 
 .navbar .search-container:hover input {
+  width: 100%;
   display: block;
   cursor: text;
   text-align: center;
@@ -152,16 +180,78 @@ html {
   padding-left: 24px;
   padding-right: 24px;
   border-radius: 16px;
-  background-color: rgba(37, 37, 39, 0.25);
+  background-color: rgba(0, 1, 8, 0.35);
   border: 0.5px solid rgba(255, 255, 255, 0.15);
+  -webkit-box-shadow: 0px 0px 18px #00000037;
+          box-shadow: 0px 0px 18px #00000037;
+}
+
+.card-anim-1 {
+  opacity: 0;
+  -webkit-animation-name: card-anim-1;
+          animation-name: card-anim-1;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.card-anim-2 {
+  opacity: 0;
+  -webkit-animation-name: card-anim-1;
+          animation-name: card-anim-1;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0.55s;
+          animation-delay: 0.55s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.card-anim-3 {
+  opacity: 0;
+  -webkit-animation-name: card-anim-1;
+          animation-name: card-anim-1;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes card-anim-1 {
+  0% {
+    margin-top: 5%;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0%;
+    opacity: 100;
+  }
+}
+
+@keyframes card-anim-1 {
+  0% {
+    margin-top: 5%;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0%;
+    opacity: 100;
+  }
 }
 
 .register-container {
-  width: 690px;
-  height: 500px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 28px;
   margin: auto;
   margin-top: 52px;
+  background-color: rgba(0, 1, 8, 0.35);
   border: 0.5px solid rgba(255, 255, 255, 0.15);
   border-radius: 28px;
 }
@@ -172,9 +262,6 @@ html {
   height: 52px;
   border-radius: 20px;
   margin-bottom: 6px;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
   background-color: #22212404;
   cursor: text;
 }
@@ -195,6 +282,12 @@ html {
   cursor: pointer;
 }
 
+.register-container .register-content {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -211,10 +304,59 @@ input, button {
   width: 60%;
 }
 
-h1 {
+center, .title-wrapper {
+  -webkit-animation-name: center-move-in;
+          animation-name: center-move-in;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+}
+
+@-webkit-keyframes center-move-in {
+  0% {
+    padding-top: 20px;
+    opacity: 0;
+  }
+  100% {
+    padding-top: 0px;
+    opacity: 100;
+  }
+}
+
+@keyframes center-move-in {
+  0% {
+    padding-top: 20px;
+    opacity: 0;
+  }
+  100% {
+    padding-top: 0px;
+    opacity: 100;
+  }
+}
+
+h1, span.logo-title, span.logo-title > span {
   font-family: 'Unbounded', 'Roboto', 'Inter', sans-serif;
   font-size: 52px;
-  color: #ffffffa8;
+  color: #deebf5;
+  -webkit-animation-name: h1-anim;
+          animation-name: h1-anim;
+  -webkit-animation-name: card-anim-1;
+          animation-name: card-anim-1;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+span.logo-title, span.logo-title > span {
+  color: aliceblue;
+  font-size: 26px;
+}
+
+span.logo-title span, span.logo-title > span span {
+  background: -webkit-gradient(linear, left top, right top, from(#00ff7b), to(#5dd899));
+  background: linear-gradient(to right, #00ff7b 0%, #5dd899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p, span, input, button {
@@ -230,7 +372,7 @@ h2 {
   font-family: 'Inter', sans-serif;
   font-size: 36px;
   letter-spacing: -1px;
-  color: #ffffffd2;
+  color: #deebf5;
   margin-bottom: 20px;
 }
 

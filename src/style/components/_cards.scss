@@ -8,7 +8,7 @@
 }
 
 .link-card
-{
+{   
    width: 32.5%;
    height: 520px;
 
@@ -17,6 +17,46 @@
    padding-right: 24px;
    border-radius: 16px;
 
-   background-color: rgba(37, 37, 39, 0.25);
+   background-color: rgba(0, 1, 8, 0.35);
    border: 0.5px solid rgba(255, 255, 255, 0.15);
+   box-shadow: 0px 0px 18px #00000037;
+}
+
+
+// ANIMATION
+.card-anim-1
+{
+   opacity: 0;
+   animation-name: card-anim-1;
+   animation-duration: 0.5s;
+   animation-delay: 0.3s;
+   animation-fill-mode: forwards;
+   // animation: ease-in-out;
+}
+
+.card-anim-2
+{
+   opacity: 0;
+   animation-name: card-anim-1;
+   animation-duration: 0.5s;
+   animation-delay: 0.55s;
+   animation-fill-mode: forwards;
+   // animation: ease-in-out;
+}
+
+.card-anim-3
+{
+   opacity: 0;
+   animation-name: card-anim-1;
+   animation-duration: 0.5s;
+   animation-delay: .8s;
+   animation-fill-mode: forwards;
+   // animation: ease-in-out;
+}
+
+
+@keyframes card-anim-1
+{
+   0% {margin-top: 5%; opacity: 0;}
+   100% {margin-top: 0%; opacity: 100;}
 }

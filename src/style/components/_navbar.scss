@@ -13,22 +13,24 @@
 
    nav
    {
-      width: 100%;
+      width: 60%;
       height: 100%;
+      margin: auto;
       backdrop-filter: blur(32px);
 
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
    }
 
    .user-nav-options
    {
+      width: fit-content;
       display: flex;
       flex-direction: row;
+      float: right;
       align-items: center;
-      justify-content: center;
    }
 
    .search-container, .login-btn
@@ -54,17 +56,17 @@
 
    .login-btn
    {
-      background-color: #c5c5c5;
+      background-color: #deebf5;
    }
 
    .login-btn:hover
    {
-      background-color: #646464;
+      background: linear-gradient(to right, rgb(0, 255, 123) 0%, rgb(93, 216, 153) 100%);
    }
 
    .search-container:hover
    {
-      width: 310px;
+      width: 510px;
       height: 52px;
       transition: 0.35s;
       animation: ease-in-out;
@@ -75,6 +77,7 @@
 
       input
       {
+         width: 100%;
          display: block;
          cursor: text;
          text-align: center;
