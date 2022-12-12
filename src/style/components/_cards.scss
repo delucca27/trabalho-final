@@ -11,17 +11,47 @@
 {   
    width: 32.5%;
    height: 520px;
-
-   padding: 18px;
-   padding-left: 24px;
-   padding-right: 24px;
    border-radius: 16px;
 
    background-color: rgba(0, 1, 8, 0.35);
    border: 0.5px solid rgba(255, 255, 255, 0.15);
    box-shadow: 0px 0px 18px #00000037;
+
+   position: relative;
+
+   h2 {
+      margin-top: 22px;
+      margin-bottom: 32px;
+   }
 }
 
+.link-card > .card-content {
+   position: absolute;
+   bottom: 0;
+
+   margin: 24px;
+
+   button.cta-card
+   {
+      border: 0.5px solid rgba(255, 255, 255, 0.15);
+
+      background-color: rgba(0, 1, 8, 0.35);
+
+      width: 100%;
+      height: 52px;
+      border-radius: 10px;
+      margin-top: 20px;
+
+      text-align: center;
+
+      font-weight: 700;
+   }
+}
+
+span.card-icon
+{
+   font-size: 146px;
+}
 
 // ANIMATION
 .card-anim-1

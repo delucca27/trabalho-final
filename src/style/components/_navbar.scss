@@ -56,20 +56,12 @@
 
    .search-container
    {
-      opacity: 0;
-      margin-top: 0;
-
-      animation-name: controls-anim-search;
       animation-duration: 0.5s;
       animation-fill-mode: forwards;
    }
 
    .login-btn
    {
-      opacity: 0;
-      margin-top: 0;
-
-      animation-name: controls-anim-button;
       animation-duration: 0.5s;
       animation-fill-mode: forwards;
 
@@ -101,16 +93,4 @@
          text-align: center;
       }
    }
-}
-
-@keyframes controls-anim-search
-{
-   0% { opacity: 0%; margin-top: 15px; }
-   100% { opacity: 100%; margin-top: 0px; }
-}
-
-@keyframes controls-anim-button
-{
-   0% { opacity: 0%; margin-top: 15px; }
-   100% { opacity: 100%; margin-top: 0px; }
 }

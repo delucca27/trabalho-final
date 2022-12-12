@@ -138,10 +138,6 @@ html {
 }
 
 .navbar .search-container {
-  opacity: 0;
-  margin-top: 0;
-  -webkit-animation-name: controls-anim-search;
-          animation-name: controls-anim-search;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
@@ -149,10 +145,6 @@ html {
 }
 
 .navbar .login-btn {
-  opacity: 0;
-  margin-top: 0;
-  -webkit-animation-name: controls-anim-button;
-          animation-name: controls-anim-button;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
@@ -186,50 +178,6 @@ html {
   text-align: center;
 }
 
-@-webkit-keyframes controls-anim-search {
-  0% {
-    opacity: 0%;
-    margin-top: 15px;
-  }
-  100% {
-    opacity: 100%;
-    margin-top: 0px;
-  }
-}
-
-@keyframes controls-anim-search {
-  0% {
-    opacity: 0%;
-    margin-top: 15px;
-  }
-  100% {
-    opacity: 100%;
-    margin-top: 0px;
-  }
-}
-
-@-webkit-keyframes controls-anim-button {
-  0% {
-    opacity: 0%;
-    margin-top: 15px;
-  }
-  100% {
-    opacity: 100%;
-    margin-top: 0px;
-  }
-}
-
-@keyframes controls-anim-button {
-  0% {
-    opacity: 0%;
-    margin-top: 15px;
-  }
-  100% {
-    opacity: 100%;
-    margin-top: 0px;
-  }
-}
-
 .cards-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -247,14 +195,38 @@ html {
 .link-card {
   width: 32.5%;
   height: 520px;
-  padding: 18px;
-  padding-left: 24px;
-  padding-right: 24px;
   border-radius: 16px;
   background-color: rgba(0, 1, 8, 0.35);
   border: 0.5px solid rgba(255, 255, 255, 0.15);
   -webkit-box-shadow: 0px 0px 18px #00000037;
           box-shadow: 0px 0px 18px #00000037;
+  position: relative;
+}
+
+.link-card h2 {
+  margin-top: 22px;
+  margin-bottom: 32px;
+}
+
+.link-card > .card-content {
+  position: absolute;
+  bottom: 0;
+  margin: 24px;
+}
+
+.link-card > .card-content button.cta-card {
+  border: 0.5px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(0, 1, 8, 0.35);
+  width: 100%;
+  height: 52px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+span.card-icon {
+  font-size: 146px;
 }
 
 .card-anim-1 {
@@ -377,6 +349,16 @@ button.menu {
   border: 0.5px solid rgba(255, 255, 255, 0.15);
   width: 62px;
   height: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 28px;
   border-radius: 20px;
   background-color: #22212421;
   -webkit-backdrop-filter: blur(30px);
@@ -418,6 +400,10 @@ button.menu:hover .menu-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+button.menu:hover .menu-icon {
+  display: none;
 }
 
 span.menu-link {

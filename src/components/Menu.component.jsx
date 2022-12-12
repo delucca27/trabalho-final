@@ -1,11 +1,18 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+
+const menuIcon = <FontAwesomeIcon icon={faCaretDown} />
+
 export default function Menu() {
    return (
       <>
       <button className="menu">
-         <div className="menu-icon"></div>
+         <div className="menu-icon">
+            { menuIcon }
+         </div>
          <div className="menu-content">
             <h4>Menu</h4>
             <div className="small-bar"></div>
