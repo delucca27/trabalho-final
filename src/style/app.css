@@ -370,8 +370,8 @@ button.menu {
   position: fixed;
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
-  top: 90px;
-  left: 21.65%;
+  top: 95px;
+  left: 16%;
   z-index: 1000;
   border: 0.5px solid rgba(255, 255, 255, 0.15);
   width: 62px;
