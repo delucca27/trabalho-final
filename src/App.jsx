@@ -1,9 +1,10 @@
 import React from 'react'
+import SearchPage from './pages/Search.page'
 
 export default function App() {
   return (
     <>
-      <h1>Lorem Ipsum</h1>
+      <SearchPage />
     </>
   )
 }
