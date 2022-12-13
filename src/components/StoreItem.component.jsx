@@ -5,7 +5,7 @@ import { faBan } from '@fortawesome/free-solid-svg-icons'
 
 const notFoundIcon = <FontAwesomeIcon icon={faBan} />
 
-export default function StoreItem() {
+export default function StoreItem(props) {
    return (
    <>
    <div className="store-item">
@@ -14,9 +14,9 @@ export default function StoreItem() {
          <span className="not-found-description">Sem imagem do produto</span>
       </div>
 
-      <span className="item-category">Gênero</span>
-      <h1 className="item-name">Nome do jogo</h1>
-      <span className="item-price">R$100,00</span>
+      <span className="item-category">{props.itemCategory}</span>
+      <h1 className="item-name">{props.itemTitle}</h1>
+      <span className="item-price">{props.itemPrice}</span>
    </div>
    </>
    )
