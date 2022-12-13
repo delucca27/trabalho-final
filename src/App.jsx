@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 
 // components and pages
 import Navbar from './components/Navbar.component'
+import Footer from './components/Footer.component'
 
 import HomePage from './pages/Home.page'
 import NewGamePage from './pages/NewGame.page'
@@ -17,12 +18,12 @@ export default function App() {
     <Router>
       <div className="application">
         <Navbar />
-          <Routes>
-            <Route path="/" element = { <HomePage /> } />
-            <Route path="*" element = { <NotFoundPage /> } />
-            <Route path="/new" element = { <NewGamePage /> } />
-            <Route path="/store" element = { <StorePage /> } />
-          </Routes>
+        <Routes>
+          <Route path="/" element = { <HomePage /> } />
+          <Route path="*" element = { <NotFoundPage /> } />
+          <Route path="/new" element = { <NewGamePage /> } />
+          <Route path="/store" element = { <StorePage /> } />
+        </Routes>
       </div>
     </Router>
   )

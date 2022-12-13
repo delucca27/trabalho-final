@@ -41,7 +41,6 @@ export default function StorePage() {
                <StoreItem />
                <StoreItem />
                <StoreItem />
-               <StoreItem />
             </div>
             
 
