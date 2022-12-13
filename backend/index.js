@@ -17,10 +17,12 @@ const db = new sqlite3.Database("./posts.db", sqlite3.OPEN_READWRITE, (err) => {
 const sql = `SELECT * FROM posts`
 
 // operações do server
-
-
 app.get("/", cors(), async (req, res) => {
    res.send("Testando...")
+})
+
+app.get("/api", (req, res) => {
+   res.json({ "posts" : ["post1", "post2", "post3"] })
 })
 
 app.listen(PORT, () => {
