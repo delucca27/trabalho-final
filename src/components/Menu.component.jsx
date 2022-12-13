@@ -24,10 +24,10 @@ export default function Menu() {
                <Link to="/new">
                   <span className="menu-link">Criar novo</span>
                </Link>
-               <Link to="/">
+               <Link to="/*">
                   <span className="menu-link">Novo por aqui?</span>
                </Link>
-               <Link to="/">
+               <Link to="/*">
                   <span className="menu-link">Login</span>
                </Link>
             </div>

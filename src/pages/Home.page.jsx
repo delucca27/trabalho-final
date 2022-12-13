@@ -37,7 +37,7 @@ export default function Homepage() {
                      TwoDots™ é a maior comunidade de games e conta com o melhor acervo de jogos mundo afora. Junte-se agora e faça parte de mais de 3 usuários!
                      </p>
 
-                     <Link to="/">
+                     <Link to="*">
                      <button className='cta-card'>Inicie sua jornada</button>
                      </Link>
                   </div>
@@ -55,7 +55,7 @@ export default function Homepage() {
                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                      </p>
 
-                     <Link to="/">
+                     <Link to="*">
                      <button className='cta-card'>Busque o que quiser</button>
                      </Link>
                   </div>
