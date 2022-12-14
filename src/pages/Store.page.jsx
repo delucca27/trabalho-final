@@ -28,9 +28,9 @@ export default function StorePage() {
                <div className="items-grid">
                {(backendData && backendData.posts) ? backendData.posts.map((v, i) => <StoreItem
                key={i}
-               itemTitle="Hearts of Iron IV"
-               itemCategory = "Estratégia"
-               itemPrice = "R$130,00"
+               itemTitle="Super Mario Kart"
+               itemCategory = "Corrida"
+               itemPrice = "R$49,00"
                />) : <p>Carregando...</p>}
                </div>
 
