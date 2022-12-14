@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 
-const menuIcon = <FontAwesomeIcon icon={faCaretDown} />
+const menuIcon = <FontAwesomeIcon icon={ faCaretDown } />
 
 export default function Menu() {
    return (
@@ -29,6 +29,9 @@ export default function Menu() {
                </Link>
                <Link to="/*">
                   <span className="menu-link">Login</span>
+               </Link>
+               <Link to="*">
+                  <span className="menu-link">Blog</span>
                </Link>
             </div>
          </div>

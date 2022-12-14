@@ -14,9 +14,12 @@ export default function StoreItem(props) {
          <span className="not-found-description">Sem imagem do produto</span>
       </div>
 
-      <span className="item-category">{props.itemCategory}</span>
-      <h1 className="item-name">{props.itemTitle}</h1>
-      <span className="item-price">{props.itemPrice}</span>
+      <div className="store-item-info">
+         <span className="item-category">{props.itemCategory}</span>
+         <h1 className="item-name">{props.itemTitle}</h1>
+         <span className="item-price">{props.itemPrice}</span>
+      </div>
+
    </div>
    </>
    )

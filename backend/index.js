@@ -15,13 +15,15 @@ const db = new sqlite3.Database("./posts.db", sqlite3.OPEN_READWRITE, (err) => {
    console.log("** Connected!");
 })
 const sql = `SELECT * FROM posts`
+const data = []
+
 
 // operações do server
 app.get("/", cors(), async (req, res) => {
    res.send("Testando...")
 })
 
-app.get("/api", (req, res) => {
+app.get("/read", (req, res) => {
    res.json({ "posts" : ["post1", "post2", "post3"] })
 })
 
