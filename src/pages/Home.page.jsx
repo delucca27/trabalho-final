@@ -33,7 +33,7 @@ export default function Homepage() {
                   </center>
 
                   <div className="card-content">
-                     <p>
+                     <p style={{textAlign: "center"}}>
                      TwoDots™ é a maior comunidade de games e conta com o melhor acervo de jogos mundo afora. Junte-se agora e faça parte de mais de 3 usuários!
                      </p>
 
@@ -51,8 +51,8 @@ export default function Homepage() {
                   </span>
                   </center>
                   <div className="card-content">
-                     <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     <p style={{textAlign: "center"}}>
+                     Conheça novos jogos e possibilidades através do TwoDots™ e veja informações relevantes, avaliações da crítica e reviews da nossa comunidade.
                      </p>
 
                      <Link to="*">
@@ -69,8 +69,8 @@ export default function Homepage() {
                   </span>
                   </center>
                   <div className="card-content">
-                     <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     <p style={{textAlign: "center"}}>
+                     A comunidade TwoDots™ pode oferecer o melhor, e você também! Contribua com suas publicações e explore todas as possibilidades!
                      </p>
 
                      <Link to="/new">

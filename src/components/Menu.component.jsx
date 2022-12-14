@@ -18,17 +18,20 @@ export default function Menu() {
             <div className="small-bar"></div>
 
             <div className="options-column">
+               <Link to="/home">
+                  <span className="menu-link">Home</span>
+               </Link>
                <Link to="/store">
                   <span className="menu-link">Ver loja</span>
                </Link>
                <Link to="/new">
                   <span className="menu-link">Criar novo</span>
                </Link>
+
+               <div className="small-bar"></div>
+
                <Link to="/*">
-                  <span className="menu-link">Novo por aqui?</span>
-               </Link>
-               <Link to="/*">
-                  <span className="menu-link">Login</span>
+                  <span className="menu-link">Entrar</span>
                </Link>
                <Link to="*">
                   <span className="menu-link">Blog</span>
