@@ -28,22 +28,76 @@ button.menu
    border-radius: 20px;
    // margin-left: 10px;
    // padding: 5px;
-
+   
    background-color: rgba(34, 33, 36, 0.129);
    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.216);
    backdrop-filter: blur(30px);
    cursor: pointer;
+   
+   animation-name: menu-callout-anim;
+   animation-duration: 2s;
+   animation-delay: 1s;
+}
+
+@keyframes menu-callout-anim {
+   0% { 
+      background-color: rgba(34, 33, 36, 0.129); 
+      border: 0.5px solid rgba(255, 255, 255, 0.15); 
+      box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.216);
+      color: #deebf5;}
+   12% { 
+      background-color: rgba(172, 172, 180, 0.35);
+      border: 0.5px solid rgba(103, 236, 154, 0.7); 
+      color: rgba(103, 236, 154, 0.7); 
+      box-shadow: 0px 0px 18px rgb(103, 236, 154);}
+   25% { 
+      background-color: rgba(34, 33, 36, 0.129); 
+      border: 0.5px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.216);
+      color: #deebf5; }
+
+   37% { 
+      background-color: rgba(34, 33, 36, 0.129);
+      border: 0.5px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.216);
+      color: #deebf5; }
+   50% { 
+      background-color: rgba(172, 172, 180, 0.35); 
+      border: 0.5px solid rgba(103, 236, 154, 0.7); 
+      color: rgba(103, 236, 154, 0.7); 
+      box-shadow: 0px 0px 18px rgb(103, 236, 154);}
+   62% { 
+      background-color: rgba(34, 33, 36, 0.129); 
+      border: 0.5px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.216);
+      color: #deebf5; }
+
+   74% { 
+      background-color: rgba(34, 33, 36, 0.129); 
+      border: 0.5px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.216);
+      color: #deebf5; }
+   86% { 
+      background-color: rgba(172, 172, 180, 0.35); 
+      border: 0.5px solid rgba(103, 236, 154, 0.7); 
+      color: rgba(103, 236, 154, 0.7); 
+      box-shadow: 0px 0px 18px rgb(103, 236, 154);}
+   100% { 
+      background-color: rgba(34, 33, 36, 0.129); 
+      border: 0.5px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.216);
+      color: #deebf5; }
 }
 
 .menu-content
 {
    display: none;
    flex-direction: column;
-
+   
    width: 100%;
    height: 100%;
    padding: 25px;
-
+   
    .options-column
    {
       // margin-top: 15px;
@@ -57,7 +111,7 @@ button.menu:hover
    width: 270px;
    height: fit-content;
    transition: 0.2s;
-
+   
    .menu-content
    {
       display: flex;

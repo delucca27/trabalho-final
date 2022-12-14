@@ -20,6 +20,7 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path="/" element = { <HomePage /> } />
+          <Route path="/home" element = { <HomePage /> } />
           <Route path="*" element = { <NotFoundPage /> } />
           <Route path="/new" element = { <NewGamePage /> } />
           <Route path="/store" element = { <StorePage /> } />

@@ -31,7 +31,7 @@ export default function StorePage() {
                itemTitle="Hearts of Iron IV"
                itemCategory = "Estratégia"
                itemPrice = "R$130,00"
-               />) : "LOADING"}
+               />) : <p>Carregando...</p>}
                </div>
 
 
